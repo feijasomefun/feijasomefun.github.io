@@ -1,4 +1,18 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Spatial-TACNA | Feija Somefun</title>
+
+  <meta
+    name="description"
+    content="Spatial-TACNA: a novel methodology for unravelling the effects of copy number alterations in spatial transcriptomics."
+  >
+
+  
 <style>
   :root {
     --background: #ffffff;
@@ -226,4 +240,211 @@
       min-height: 450px;
     }
   }
-</style>
+
+    /* Poster section */
+
+    .poster-section {
+      padding: 34px 0 70px;
+      border-top: 1px solid var(--border);
+    }
+
+    .section-heading {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: 1.45rem;
+      letter-spacing: -0.025em;
+    }
+
+    .poster-note {
+      margin: 5px 0 0;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .poster-frame {
+      overflow: hidden;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: white;
+      box-shadow: 0 8px 30px rgba(25, 40, 55, 0.06);
+    }
+
+    .poster-frame iframe {
+      display: block;
+      width: 100%;
+      height: min(85vh, 1000px);
+      min-height: 600px;
+      border: 0;
+    }
+
+    .pdf-fallback {
+      padding: 14px 18px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.88rem;
+    }
+
+    /* Footer */
+
+    footer {
+      padding: 22px 0 32px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+
+    footer a {
+      color: var(--text);
+    }
+
+    @media (max-width: 640px) {
+      .page {
+        width: min(100% - 28px, 1120px);
+      }
+
+      .hero {
+        padding-top: 46px;
+      }
+
+      .poster-frame iframe {
+        height: 70vh;
+        min-height: 450px;
+      }
+
+      .section-heading {
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main>
+    <!-- Project title and author information -->
+    <header class="hero page">
+
+      <h1>Spatial-TACNA</h1>
+
+      <p class="subtitle">
+        A novel methodology for unravelling the effects of copy number
+        alterations in spatial transcriptomics
+      </p>
+
+      <div class="authors">
+        <a href="https://github.com/feijasomefun"
+           target="_blank"
+           rel="noopener noreferrer">
+          Feija Somefun
+        </a><sup>1</sup>,
+        <a href="https://www.rug.nl/staff/m.de.bruyn/research"
+          target="_blank"
+          rel="noopener noreferrer">
+          Marco de Bruyn
+        </a><sup>2</sup>,
+        <a href="https://www.rug.nl/staff/a.bhattacharya/research?lang=en"
+          target="_blank"
+          rel="noopener noreferrer">
+          Arkajyoti Bhattacharya
+        </a><sup>1</sup>,
+        <a href="http://rudolffehrmann.nl/wordpress/"
+          target="_blank"
+          rel="noopener noreferrer">
+          Rudolf S. N. Fehrmann
+        </a><sup>1</sup>,
+      
+      </div>
+
+      <p class="affiliation">
+        <sup>1</sup> Department of Medical Oncology, University Medical Center
+        Groningen, University of Groningen, The Netherlands.
+        <br>
+        <sup>2</sup> Department of Obstetrics and Gynaecology, University
+        Medical Center Groningen, University of Groningen, The Netherlands.
+      </p>
+
+      <nav class="contact-links" aria-label="Contact and project links">
+
+        <a class="contact-link primary"
+           href="#poster">
+          View poster ↓
+        </a>
+
+        <a class="contact-link"
+           href="https://github.com/ComputationalOncologyUMCG"
+           target="_blank"
+           rel="noopener noreferrer">
+          GitHub ↗
+        </a>
+
+        <!-- Replace this placeholder with your preferred email address -->
+        <a class="contact-link"
+           href="mailto:f.a.f.somefun@umcg.nl">
+          Email contact ↗
+        </a>
+
+      </nav>
+    </header>
+
+    <!-- Full poster displayed below the title section -->
+    <section class="poster-section" id="poster">
+      <div class="page">
+
+        <div class="section-heading">
+          <div>
+            <h2>Research poster</h2>
+            <p class="poster-note">
+              Explore the methodology, validation and spatial applications
+              of Spatial-TACNA.
+            </p>
+          </div>
+
+          <a class="contact-link"
+             href="Spatial_TACNA.pdf"
+             target="_blank"
+             rel="noopener noreferrer">
+            Open full poster PDF ↗
+          </a>
+        </div>
+
+        <div class="poster-frame">
+          <iframe
+            src="Spatial_TACNA.pdf#toolbar=1&navpanes=0&view=FitH"
+            title="Spatial-TACNA research poster">
+          </iframe>
+
+          <div class="pdf-fallback">
+            If the poster does not appear in your browser,
+            <a href="Spatial_TACNA.pdf" target="_blank"
+               rel="noopener noreferrer">
+              open the PDF directly
+            </a>.
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="page">
+      <p>
+        Feija Somefun ·
+        <a href="https://github.com/feijasomefun"
+           target="_blank"
+           rel="noopener noreferrer">GitHub</a>
+        · University Medical Center Groningen
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
