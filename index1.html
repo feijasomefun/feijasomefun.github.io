@@ -1,0 +1,229 @@
+
+<style>
+  :root {
+    --background: #ffffff;
+    --surface: #ffffff;
+    --text: #222222;
+    --muted: #555d66;
+    --accent: #315b78;
+    --border: #e5e7eb;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    background: var(--background);
+    color: var(--text);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .page {
+    width: min(960px, calc(100% - 40px));
+    margin: 0 auto;
+  }
+
+  /* Centered academic project header */
+
+  .hero {
+    padding: 76px 0 52px;
+    text-align: center;
+  }
+
+  h1 {
+    max-width: 900px;
+    margin: 0 auto;
+    color: #202124;
+    font-size: clamp(2.8rem, 6vw, 4.2rem);
+    font-weight: 700;
+    letter-spacing: -0.045em;
+    line-height: 1.12;
+  }
+
+  .subtitle {
+    max-width: 780px;
+    margin: 20px auto 28px;
+    color: var(--muted);
+    font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+    line-height: 1.55;
+  }
+
+  .authors {
+    max-width: 850px;
+    margin: 30px auto 0;
+    font-size: 1rem;
+    line-height: 2;
+  }
+
+  .authors a {
+    color: var(--accent);
+    font-weight: 500;
+  }
+
+  .authors sup {
+    color: var(--muted);
+    font-size: 0.72em;
+  }
+
+  .affiliation {
+    margin: 14px auto 0;
+    color: var(--muted);
+    font-size: 0.91rem;
+    line-height: 1.8;
+  }
+
+  .contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 26px;
+  }
+
+  .contact-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 40px;
+    padding: 8px 15px;
+    border: 1px solid #d9dee5;
+    border-radius: 5px;
+    background: #ffffff;
+    color: var(--accent);
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: background 0.2s, border-color 0.2s;
+  }
+
+  .contact-link:hover {
+    border-color: var(--accent);
+    background: #f6f8fa;
+    text-decoration: none;
+  }
+
+  .contact-link.primary {
+    border-color: var(--accent);
+    background: var(--accent);
+    color: #ffffff;
+  }
+
+  .contact-link.primary:hover {
+    background: #25465e;
+  }
+
+  /* Poster section */
+
+  .poster-section {
+    padding: 32px 0 64px;
+    border-top: 1px solid var(--border);
+  }
+
+  .section-heading {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 22px;
+  }
+
+  h2 {
+    margin: 0;
+    color: #222222;
+    font-size: 1.45rem;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+  }
+
+  .poster-note {
+    margin: 5px 0 0;
+    color: var(--muted);
+    font-size: 0.92rem;
+  }
+
+  .poster-frame {
+    overflow: hidden;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    background: #ffffff;
+  }
+
+  .poster-frame iframe {
+    display: block;
+    width: 100%;
+    height: min(85vh, 1000px);
+    min-height: 600px;
+    border: 0;
+  }
+
+  .pdf-fallback {
+    padding: 14px 18px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.88rem;
+  }
+
+  /* Footer */
+
+  footer {
+    padding: 22px 0 30px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.85rem;
+    text-align: center;
+  }
+
+  footer a {
+    color: var(--accent);
+  }
+
+  @media (max-width: 640px) {
+    .page {
+      width: calc(100% - 28px);
+    }
+
+    .hero {
+      padding-top: 48px;
+      padding-bottom: 38px;
+    }
+
+    h1 {
+      font-size: clamp(2.4rem, 11vw, 3.4rem);
+    }
+
+    .authors {
+      line-height: 2.1;
+    }
+
+    .contact-links {
+      gap: 8px;
+    }
+
+    .section-heading {
+      align-items: flex-start;
+    }
+
+    .poster-frame iframe {
+      height: 70vh;
+      min-height: 450px;
+    }
+  }
+</style>
